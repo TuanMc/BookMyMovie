@@ -1,0 +1,26 @@
+.header {
+  background-color: #222;
+  height: 36px;
+  padding: 8px 32px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__action-container button:not(:last-child) {
+    margin-right: 8px;
+}
+
+.header__logo {
+  background-color: #ff7f7f;
+  height: 35px;
+  animation: rotateLogo 8s linear infinite;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
